@@ -14,16 +14,19 @@
 
 int main()
 {
-	DiamondTrap a;
+	// DiamondTrap a;
 	// FragTrap b("Cody");
-	a.attack("some other robot");
-	a.takeDamage(101);
-	a.takeDamage(101);
-	a.beRepaired(5);
-	a.attack("some other other robot");
+	// a.attack("some other robot");
+	// a.takeDamage(101);
+	// a.takeDamage(101);
+	// a.beRepaired(5);
+	// a.attack("some other other robot");
 	// b.beRepaired(3);
 	// for (int i = 1; i <= 12; i++)
 	// 	b.attack("Cody-clone");
 	// b.beRepaired(3);
+	ClapTrap *nnn = new DiamondTrap("me");
+	nnn->attack("jhgjh");
+	delete nnn;
 	return (0);
 }

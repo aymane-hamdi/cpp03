@@ -23,9 +23,9 @@ ClapTrap::ClapTrap()
 ClapTrap::ClapTrap(std::string name)
 {
     this->name = name;
-    Hit_points = 100;
-    Energy_points = 50;
-    Attack_damage = 20;
+     Hit_points = 10;
+    Energy_points = 10;
+    Attack_damage = 0;
     std::cout << "Parameterized constructor of ClapTrap Called" << std::endl;
 }
 
@@ -69,11 +69,17 @@ void ClapTrap::attack(const std::string& target)
 
 void ClapTrap::takeDamage(unsigned int amount)
 {
-    this->Hit_points -= amount;
-    if (Hit_points < 0) 
-		this->Hit_points = 0;
-     std::cout << this->name << " took " << amount << " damage, remaining Hit points: " << Hit_points << std::endl;
+    if(Hit_points > 0)
+    {
+        this->Hit_points -= amount;
+        if (Hit_points < 0) 
+		    this->Hit_points = 0;
+        std::cout << this->name << " took " << amount << " damage, remaining Hit points: " << Hit_points << std::endl;
+    }
+    else
+        std::cout << "ClapTrap " << this->name << " is not able to takeDamage " << amount << ", because he has not enough hit points." << std::endl;
 }
+
 void ClapTrap::beRepaired(unsigned int amount)
 {
     if (this->Hit_points <= 0 || this->Energy_points <= 0)
