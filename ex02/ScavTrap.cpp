@@ -6,7 +6,7 @@
 /*   By: ahamdi <ahamdi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 21:35:19 by ahamdi            #+#    #+#             */
-/*   Updated: 2024/12/15 15:34:48 by ahamdi           ###   ########.fr       */
+/*   Updated: 2024/12/15 16:49:17 by ahamdi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ ScavTrap::ScavTrap(std::string name)
     Attack_damage = 20;
     std::cout << "Parameterized constructor of ScavTrap Called" << std::endl;
 }
+
 ScavTrap::ScavTrap(ScavTrap &original)
 {
     this->name = original.name;
@@ -50,6 +51,7 @@ ScavTrap& ScavTrap::operator=(const ScavTrap& original)
     std::cout << "ScavTrap Assignation operator called" << std::endl;
     return (*this);
 }
+
 void ScavTrap::attack(const std::string& target)
 {
     if (this->Energy_points > 0 && this->Hit_points > 0)
@@ -60,10 +62,12 @@ void ScavTrap::attack(const std::string& target)
 	else
 		std::cout << "ScavTrap " << this->name << " is not able to attack " << target << ", because he has not enough hit points." << std::endl;
 }
+
 ScavTrap::~ScavTrap()
 {
     std::cout << "Deconstractor  of ScavTrap Called" << std::endl;
 }
+
 void	ScavTrap::guardGate(void)
 {
 	std::cout << "ScavTrap " << this->name << " is now guarding the gate." << std::endl;

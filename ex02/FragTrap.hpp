@@ -6,7 +6,7 @@
 /*   By: ahamdi <ahamdi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 22:07:40 by ahamdi            #+#    #+#             */
-/*   Updated: 2024/12/15 14:59:37 by ahamdi           ###   ########.fr       */
+/*   Updated: 2024/12/15 16:48:43 by ahamdi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ class FragTrap : public  ClapTrap
         FragTrap& operator=(const FragTrap& original);
         void attack(const std::string& target);
         ~FragTrap();
-       
         void highFivesGuys();
 };
 

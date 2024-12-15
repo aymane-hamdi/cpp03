@@ -6,11 +6,12 @@
 /*   By: ahamdi <ahamdi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 17:11:08 by ahamdi            #+#    #+#             */
-/*   Updated: 2024/12/15 15:36:36 by ahamdi           ###   ########.fr       */
+/*   Updated: 2024/12/15 16:45:47 by ahamdi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
+
 ClapTrap::ClapTrap()
 {
 	this->name = "defaultCT";
@@ -19,6 +20,7 @@ ClapTrap::ClapTrap()
     Attack_damage = 0;
     std::cout << "Default constructor of ClapTrap Called" << std::endl;
 }
+
 ClapTrap::ClapTrap(std::string name)
 {
     this->name = name;
@@ -68,7 +70,7 @@ void ClapTrap::attack(const std::string& target)
 
 void ClapTrap::takeDamage(unsigned int amount)
 {
-    if(Hit_points > 0)
+    if (this->Hit_points <= 0 || this->Energy_points <= 0)
     {
         this->Hit_points -= amount;
         if (Hit_points < 0) 
@@ -78,6 +80,7 @@ void ClapTrap::takeDamage(unsigned int amount)
     else
         std::cout << "ClapTrap " << this->name << " is not able to takeDamage " << amount << ", because he has not enough hit points." << std::endl;
 }
+
 void ClapTrap::beRepaired(unsigned int amount)
 {
     if (this->Hit_points <= 0 || this->Energy_points <= 0)

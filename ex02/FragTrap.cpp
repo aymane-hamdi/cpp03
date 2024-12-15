@@ -6,7 +6,7 @@
 /*   By: ahamdi <ahamdi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 22:07:22 by ahamdi            #+#    #+#             */
-/*   Updated: 2024/12/15 15:34:59 by ahamdi           ###   ########.fr       */
+/*   Updated: 2024/12/15 16:48:30 by ahamdi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,9 +48,10 @@ FragTrap& FragTrap::operator=(const FragTrap& original)
         this->Energy_points = original.Energy_points;
         this->Attack_damage = original.Attack_damage;
     }
-    std::cout << "DiamondTrap Assignation operator called" << std::endl;
+    std::cout << "FragTrap Assignation operator called" << std::endl;
     return (*this);
 }
+
 void FragTrap::attack(const std::string& target)
 {
     if (this->Energy_points > 0 && this->Hit_points > 0)

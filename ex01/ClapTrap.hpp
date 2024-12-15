@@ -6,7 +6,7 @@
 /*   By: ahamdi <ahamdi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 17:11:06 by ahamdi            #+#    #+#             */
-/*   Updated: 2024/12/15 15:20:03 by ahamdi           ###   ########.fr       */
+/*   Updated: 2024/12/15 16:46:49 by ahamdi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 #define CLAPTRAP_HPP
 
 #include <iostream>
-
 class ClapTrap 
 {
     protected:

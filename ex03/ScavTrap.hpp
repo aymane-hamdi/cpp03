@@ -6,13 +6,14 @@
 /*   By: ahamdi <ahamdi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 21:25:05 by ahamdi            #+#    #+#             */
-/*   Updated: 2024/12/15 15:01:08 by ahamdi           ###   ########.fr       */
+/*   Updated: 2024/12/15 16:51:48 by ahamdi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef  SCAVTRAP_HPP
 #define SCAVTRAP_HPP
 #include "ClapTrap.hpp"
+
 class ScavTrap :  public  virtual  ClapTrap
 {
     public :

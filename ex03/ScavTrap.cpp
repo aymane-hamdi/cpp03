@@ -6,7 +6,7 @@
 /*   By: ahamdi <ahamdi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 21:35:19 by ahamdi            #+#    #+#             */
-/*   Updated: 2024/12/15 15:44:18 by ahamdi           ###   ########.fr       */
+/*   Updated: 2024/12/15 16:51:57 by ahamdi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ ScavTrap::ScavTrap()
     this->name = "defaultST";
     Hit_points = 100;
     Energy_points = 50;
-    Attack_damage = 200;
+    Attack_damage = 20;
     std::cout << "Default constructor of ScavTrap Called" << std::endl;
 }
 

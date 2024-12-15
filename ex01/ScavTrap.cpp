@@ -6,7 +6,7 @@
 /*   By: ahamdi <ahamdi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 21:35:19 by ahamdi            #+#    #+#             */
-/*   Updated: 2024/12/15 15:37:08 by ahamdi           ###   ########.fr       */
+/*   Updated: 2024/12/15 16:47:27 by ahamdi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ ScavTrap& ScavTrap::operator=(const ScavTrap& original)
     std::cout << "ScavTrap Assignation operator called" << std::endl;
     return (*this);
 }
+
 void ScavTrap::attack(const std::string& target)
 {
     if (this->Energy_points > 0 && this->Hit_points > 0)
@@ -65,6 +66,7 @@ ScavTrap::~ScavTrap()
 {
     std::cout << "Deconstractor  of ScavTrap Called" << std::endl;
 }
+
 void	ScavTrap::guardGate(void)
 {
 		std::cout << "ScavTrap " << this->name << " is now guarding the gate." << std::endl;
