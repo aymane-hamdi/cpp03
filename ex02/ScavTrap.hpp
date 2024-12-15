@@ -16,8 +16,6 @@
 #include <iostream>
 class ScavTrap : public  ClapTrap
 {
-    private :
-        bool guarding;
     public :
         ScavTrap();
         ScavTrap(std::string name);

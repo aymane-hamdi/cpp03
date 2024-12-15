@@ -18,7 +18,6 @@ ScavTrap::ScavTrap()
     Hit_points = 100;
     Energy_points = 50;
     Attack_damage = 20;
-    this->guarding = false;
     std::cout << "Default constructor of ScavTrap Called" << std::endl;
 }
 
@@ -28,7 +27,6 @@ ScavTrap::ScavTrap(std::string name)
     Hit_points = 100;
     Energy_points = 50;
     Attack_damage = 20;
-    this->guarding = false;
     std::cout << "Parameterized constructor of ScavTrap Called" << std::endl;
 }
 ScavTrap::ScavTrap(ScavTrap &original)
@@ -69,11 +67,5 @@ ScavTrap::~ScavTrap()
 }
 void	ScavTrap::guardGate(void)
 {
-	if (this->guarding == false)
-	{
-		this->guarding = true;
 		std::cout << "ScavTrap " << this->name << " is now guarding the gate." << std::endl;
-	}
-	else
-		std::cout << "ScavTrap " << this->name << " is already guarding the gate." << std::endl;
 }

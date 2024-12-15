@@ -15,8 +15,6 @@
 #include "ClapTrap.hpp"
 class ScavTrap :  public  virtual  ClapTrap
 {
-    private :
-        bool guarding;
     public :
         ScavTrap();
         ScavTrap(std::string name);
